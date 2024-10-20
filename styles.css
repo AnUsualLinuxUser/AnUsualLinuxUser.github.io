@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    text-align: left;
 }
 
 h1, h2, h3 {
-    text-align: center;
+    text-align: left;
 }
 
 a {
@@ -20,7 +21,7 @@ a:hover {
 
 .banner {
     display: block;
-    margin: 20px auto;
+    margin: 20px 0;
     width: 80%;
     max-width: 600px;
     border-radius: 5px;
