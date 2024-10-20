@@ -1,20 +1,22 @@
-.banner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 .banner {
+    display: block;
+    margin: 20px auto;
     width: 80%;
     max-width: 600px;
-    margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
 }
 
-.banner:hover {
-    transform: scale(1.05);
+a {
+    text-decoration: none;
 }
