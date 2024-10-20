@@ -8,6 +8,16 @@ h1, h2, h3 {
     text-align: center;
 }
 
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .banner {
     display: block;
     margin: 20px auto;
@@ -15,8 +25,4 @@ h1, h2, h3 {
     max-width: 600px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-a {
-    text-decoration: none;
 }
