@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const channels = document.querySelectorAll('.channel');
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
 
-    channels.forEach(channel => {
-        channel.addEventListener('mouseenter', () => {
-            const color = channel.getAttribute('data-color');
-            document.body.style.backgroundColor = 'transparent';
-        });
-
-        channel.addEventListener('mouseleave', () => {
-            document.body.style.backgroundColor = '#f0f8ff';
-        });
+    hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
     });
 });
