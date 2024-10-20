@@ -5,87 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diritto ed Economia - Articoli</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1, h2 {
-            text-align: center;
-            color: #4A90E2;
-        }
-
-        nav {
-            background: #4A90E2;
-            padding: 1rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #D9EFFF;
-        }
-
-        .content {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .download-links {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .download-links li {
-            margin-bottom: 1rem;
-        }
-
-        .download-links a {
-            display: inline-block;
-            background: #4A90E2;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .download-links a:hover {
-            background: #357ABD;
-        }
-
-        footer {
-            background: #4A90E2;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <header>
         <h1>Diritto ed Economia</h1>
+        <nav aria-label="Navigazione principale">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Diritto.html">Torna indietro</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Diritto.html">Torna indietro</a>
-    </nav>
 
     <div class="content">
         <h2>Appunti</h2>
@@ -104,5 +36,16 @@
     <footer>
         &copy; 2024 AnUsualLinuxUser - Tutti i diritti riservati.
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+
+            hamburger.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diritto ed Economia</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Collega il CSS principale -->
+    <link rel="stylesheet" href="styles1.css"> <!-- Collega il CSS per il menù a hamburger -->
 </head>
 <body>
     <header>
         <h1>DIRITTO ED ECONOMIA</h1>
         <nav aria-label="Navigazione principale">
-            <ul>
+            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Icona hamburger -->
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
@@ -29,5 +31,17 @@
     <footer>
         &copy; 2024 AnUsualLinuxUser - Tutti i diritti riservati.
     </footer>
+
+    <script>
+        // JavaScript per il comportamento del menù a hamburger
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+
+            hamburger.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

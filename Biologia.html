@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biologia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <header>
         <h1>Biologia</h1>
         <nav aria-label="Navigazione principale">
-            <ul>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
@@ -19,7 +21,7 @@
     <main>
         <div class="content">
             <h2>Appunti</h2>
-            <ul>
+            <ul class="download-links">
                 <li><a href="biologia1.docx" download="biologia1.docx">LE PRIME CELLULE</a></li>
                 <li><a href="biologia2.docx" download="biologia2.docx">ESSERE UNI/PLURICELLULARI</a></li>
                 <li><a href="biologia3.html">TABELLA1</a></li>
@@ -30,5 +32,16 @@
     <footer>
         &copy; 2024 AnUsualLinuxUser - Tutti i diritti riservati.
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.getElementById('menu');
+
+            hamburger.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
